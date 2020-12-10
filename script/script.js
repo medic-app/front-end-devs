@@ -1,5 +1,9 @@
 
 
+
+
+
+
 let myToggleBtn = document.getElementById("nav-toggle");
 let myNavList = document.querySelector(".nav-list");
 
@@ -19,7 +23,7 @@ let checkSize = () => {
         MyNavClose.style.display = "none"
         myNavList.style.display = "flex"
     }
-  return mySize;  
+  return mySize;
 }
 
 
@@ -35,3 +39,16 @@ let showNav = () => {
     }
 }
 myToggleBtn.addEventListener("click", showNav)
+/*
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+// toggle the type attribute
+const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+password.setAttribute('type', type);
+// toggle the eye slash icon
+this.classList.toggle('fa-eye-slash');
+});
+*/

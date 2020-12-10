@@ -7,7 +7,246 @@
     <title>Fast Health Solution</title>
     <link rel="icon" href="images/logo.svg">
     <script src="https://kit.fontawesome.com/4ea96ace4f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="style/styl.css" type="text/css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        .nav-bar {
+            background: linear-gradient(93.73deg, #3D63EC 0%, #2D57EE 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            position: relative;
+            border-bottom: 3px solid white;
+            height: 460px;
+        }
+        
+        #nav-toggle {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 5px;
+            top: 20px;
+            /* transform: translate(0, -50%); */
+            display: none;
+        }
+        
+        .toggle {
+            font-size: 20px;
+            color: #fff;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            padding-right: 60px;
+        }
+        
+        #logo {
+            width: 59px;
+            height: 58px;
+            position: relative;
+            top: -210px;
+            margin-left: 2px;
+        }
+        
+        #nav-header {
+            color: #fff;
+            padding-left: 20px;
+            position: relative;
+            top: -190px;
+        }
+        
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            position: relative;
+            top: -170px;
+            margin-right: -670px;
+        }
+        
+        .nav-list-item {
+            /* padding: 0 10px; */
+        }
+        
+        .nav-list-item:nth-child(1),
+        .nav-list-item:nth-child(2),
+        .nav-list-item:nth-child(3),
+        .nav-list-item:nth-child(4) {
+            border-right: 2px solid #fff;
+        }
+        
+        .nav-list-link {
+            display: block;
+            color: #fff;
+            padding: 1px 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        /* Registration page starts*/
+        
+        .Registration-page {
+            background: url(Rectangle\ 31.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .main {
+            display: grid;
+            grid-auto-flow: column;
+            height: 400px;
+        }
+        
+        img {
+            display: grid;
+            margin-left: 90px;
+            margin-top: 40px;
+        }
+        
+        #login {
+            color: #4B91F0;
+            font-weight: bold;
+            margin-right: 200px;
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        form {
+            background: linear-gradient(93.73deg, #3D63EC 0%, #2D57EE 100%);
+            height: 250px;
+            width: 450px;
+            padding-left: 110px;
+            border: 4px solid #4B91F0;
+            border-radius: 25px;
+            margin-top: 40px;
+        }
+        
+        .input-group {
+            line-height: 6;
+            justify-content: center;
+        }
+        
+        .input-control {
+            border: 5px solid white;
+            border-radius: 30px;
+            height: 40px;
+            color: #4B91F0;
+        }
+        
+        label {
+            color: #fff;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        
+        #forget {
+            color: white;
+            text-align: right;
+            position: relative;
+            right: 40px;
+            padding-top: 15px;
+        }
+        
+        .inputs {
+            border: 5px solid white;
+            border-radius: 30px;
+            height: 30px;
+            width: 100px;
+            color: #4B91F0;
+            margin-right: 50px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .input-group2 {
+            justify-content: center;
+            margin-left: 150px;
+            margin-top: 10px;
+        }
+        
+        .member {
+            list-style-type: none;
+            font-size: 14px;
+            text-decoration: none;
+            color: white;
+            margin-right: 100px;
+            font-weight: bold;
+        }
+        
+        .vertical-line {
+            position: relative;
+            border-right: 2px solid white;
+            height: 460px;
+            float: right;
+            right: 620px;
+            top: -465px;
+        }
+        
+        .horinzontal-line {
+            position: relative;
+            border-bottom: 2px solid white;
+            width: 730px;
+            top: -380px;
+        }
+        
+        p {
+            color: white;
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        #img {
+            position: relative;
+            bottom: -50px;
+            margin-left: -340px;
+            width: 550px;
+            height: 320px;
+            top: -0px;
+        }
+        
+        .images {
+            height: 350px;
+        }
+        
+        footer {
+            position: relative;
+            bottom: 20;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background: linear-gradient(93.73deg, #3D63EC 0%, #2D57EE 100%);
+            margin-top: 100px
+        }
+        
+        footer .footer-item {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: 10px 30px;
+        }
+        
+        footer .footer-item a {
+            color: #f8f8f8;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 24px;
+        }
+        
+        footer .footer-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
 </head>
 
 <body onresize="checkSize()">
@@ -22,24 +261,58 @@
             <div class="nav-logo">
                 <img id="logo" src="images/logo.svg" alt="Our Logo">
                 <h1 id="nav-header">Fast Health <br> Solution</h1>
+                <p>Fast Health Solutions..Expectational Technolgy,<br> Extraordinary Care Feel better<br><br> We provide a high level tomots patients to ensure<br> good quality of life,cure illnesses when possible,and<br> to expend life expectancy</p>
             </div>
             <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-list-link" href="Home.html">Home</a></li>
+                <li class="nav-list-item"><a class="nav-list-link" href="index.html">Home</a></li>
                 <li class="nav-list-item"><a class="nav-list-link" href="Doctor.html">Doctor</a></li>
                 <li class="nav-list-item"><a class="nav-list-link" href="About.html">About Us</a></li>
                 <li class="nav-list-item"><a class="nav-list-link" href="Services.html">Services</a></li>
                 <li class="nav-list-item"><a class="nav-list-link" href="Login.html">Login</a></li>
             </ul>
+            <img id="img" src="images/patient.JPG" alt="Our Logo">
         </nav>
+        <div class="vertical-line"></div>
+        <div class="horinzontal-line"></div>
         <!-- END of section navigation -->
 
         <div class="main">
-            <h2>Login Page</h2>
 
-            <!--build here-->
+            <div class="aside">
+                <img src="images/doctor.png" class="images" alt="image">
+            </div>
+            <div aside="aside2">
+                <h2 id="login">Login</h2><br>
+                <form action="form">
+                    <div class="input-group">
+                        <label>Username</label>
+                        <input type="text" name="" class="input-control">
+                    </div>
+                    <div class="input-group1">
+                        <label id="create">Password</label>
+                        <input type="password" name="" class="input-control">
+                    </div>
+                    <h3 id="forget">Forgot password?</h3>
+                    <div class="input-group2">
+                        <input type="submit" value="sign up" class="inputs">
+                    </div>
+                    <a href="Registration.html" class="member">Not a member Yet? Sign up</a>
+                    <!--This will contain the registration form-->
+                </form>
+
+
+            </div>
         </div>
-
     </div>
+    <!--build here-->
+
+    <footer>
+        <!--Footer here-->
+        <div class="footer-item">
+            <a href="contact us">Contact Us</a>
+        </div>
+    </footer>
+
 
     <script src="script/script.js"></script>
 </body>
