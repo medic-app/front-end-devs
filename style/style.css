@@ -1,70 +1,104 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+
+}
+html, body{
+  min-height: 100%;
+  min-width: 100vw;
+
+
+
+
+}
+body{
+  height: 100vh;
+  min-width: 100vw;
+}
+.container-fluid{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.mainContainer {
-    background: url(Rectangle\ 32.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.main{
+  background: url(Rectangle\ 32.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ overflow-x: hidden;
+
 }
 
-.BodyContainer {
-    position: absolute;
-    width: 1161px;
-    height: 146px;
-    left: 335px;
-    top: 341px;
+button a {
+color: #ffffff;
+}
+button  {
+margin-left: 20px;
+margin-top:10px;
+}
+img[src="nurse.png"]{
+  width: auto;
+  height: auto;
+  min-width:145vw;
+  position: relative;
+  margin-left: -90px;
+
+  min-height: 100vh;
 }
 
-.BodyContainer h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 73px;
+.Nurse_img{
+  width: 50%;
+}
+
+
+.img-fluid{
+  min-height: 100vh;
+}
+
+.btn{
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 95%;
+}
+.btn:hover{
+  border: 3px solid white;
+  border-radius: 20px;
+}
+button a:hover{
+color: #ffffff;
+text-decoration: none;
+}
+
+#fast{
+  text-align: right;
+
+}
+.text {
+    padding-top: 100%;
+    line-height: 25px;
     text-align: center;
-}
-
-.Get-started {
-    margin: 10px;
-    margin-left: 29vw;
-    background: #375FED;
-    border-radius: 60px;
-    display: flex;
-    flex-direction: row;
-    padding: 5px 41px;
-    width: 262px;
     align-content: center;
+      font-family: Nunito;
+    font-weight:bolder;
+    font-size: 14px;
+    color: #ffffff;
 }
-
-.BodyContainer .Get-started a {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 37px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    text-decoration: none;
-}
-
-.BodyContainer .Get-started a:hover {
-    opacity: 0.5;
-}
-
-
-/* section navigation */
 
 .nav-bar {
+    max-width: 100%;
     background-color: #4B91F0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    position: relative;
     border-bottom: 3px solid white;
 }
 
@@ -75,6 +109,7 @@
     right: 5px;
     top: 20px;
     /* transform: translate(0, -50%); */
+
     display: none;
 }
 
@@ -86,7 +121,6 @@
 .nav-logo {
     display: flex;
     align-items: center;
-    border-right: 5px solid white;
     padding-right: 60px;
 }
 
@@ -98,11 +132,13 @@
 #nav-header {
     color: #fff;
     padding-left: 10px;
+    font-size: 14px;
 }
 
 .nav-list {
     list-style-type: none;
     display: flex;
+
 }
 
 .nav-list-item {
@@ -117,6 +153,7 @@
 }
 
 .nav-list-link {
+    list-style-type: none;
     display: block;
     color: #fff;
     padding: 1px 20px;
@@ -126,21 +163,28 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
-
-
+.nav-list-link:hover {
+    list-style-type: none;
+    display: block;
+    color:#fff;
+    padding: 1px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
 /* END of section navigation */
-
-
 /* Footer starts here*/
 
 footer {
-    position: relative;
+
     bottom: 0;
     left: 0;
     width: 100%;
     height: 70px;
     background: linear-gradient(93.73deg, #3D63EC 0%, #2D57EE 100%);
-    margin-top: 600px
+    margin-top: -10px
 }
 
 footer .footer-item {
@@ -191,4 +235,37 @@ footer .footer-item a:hover {
         background-color: #fff;
         color: #000;
     }
+
+
+}
+@media only screen and (min-width:768px) {
+
+  .text {
+    padding-top: 150px;
+      font-family: Montserrat;
+      font-weight:900;
+      font-size: 35px;
+      color: #ffffff;
+      line-height: 50px;
+      font-size: 40px;
+
+  }
+  button  {
+width: 20%;
+  margin-left: 300px;
+  margin-top:15px;
+  }
+  .btn{
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 20%;
+
+  }
+  img[src="nurse.png"]{
+    width: auto;
+    height: auto;
+    min-width: 50vw;
+
+  }
 }
